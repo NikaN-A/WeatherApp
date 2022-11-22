@@ -5,19 +5,20 @@ body {
 form {
   padding: 20px;
 }
-.container {
-  margin-top: 30px;
-  border: 1px solid #bdc2fa;
+
+ 
+
+.weatherApp-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weatherApp {
+  padding: 17px;
+   border: 1px solid #bdc2fa;
   width: 36rem;
   box-shadow: 15px 15px 15px darkgray;
   background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border-radius: 30px;
-}
-.weatherApp {
-  max-width: 600px;
-  margin: 10px auto;
-  margin-bottom: 0px;
-  
 }
 #city {
   border-radius: 30px;
@@ -99,6 +100,5 @@ h5 {
 }
 .github {
   display: block;
-text-align: center;
 box-sizing: border-box;
 }
