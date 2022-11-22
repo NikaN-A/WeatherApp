@@ -13,6 +13,12 @@ form {
   background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border-radius: 30px;
 }
+.weatherApp {
+  max-width: 600px;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  
+}
 #city {
   border-radius: 30px;
   border: 2px solid #24527a;
@@ -90,4 +96,9 @@ h5 {
   );
 
   transition: all 200ms;
+}
+.github {
+  display: block;
+text-align: center;
+box-sizing: border-box;
 }
