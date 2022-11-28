@@ -37,19 +37,26 @@ function showWeather(response) {
   document.querySelector("#bigTemp").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   let h1 = document.querySelector("h1");
-
+  let iconElement = document.querySelector("#icon");
   h1.innerHTML = response.data.name;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
   function movetofahrenheit(event) {
     event.preventDefault();
     let temp = document.querySelector("#bigTemp");
-    temp.innerHTML = response.data.main.temp;
+    temp.innerHTML = Math.round(respond.data.main.temp * 1.8) + 32;
   }
   let fahrenheit = document.querySelector("#°f");
   fahrenheit.addEventListener("click", movetofahrenheit);
@@ -57,7 +64,7 @@ function showWeather(response) {
   function movetocelcius(event) {
     event.preventDefault();
     let temp = document.querySelector("#bigTemp");
-    temp.innerHTML = response.data.main.temp;
+    temp.innerHTML = Math.round(respond.data.main.temp);
   }
   let celcius = document.querySelector("#°c");
   celcius.addEventListener("click", movetocelcius);

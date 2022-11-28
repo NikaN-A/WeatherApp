@@ -35,17 +35,20 @@
           </form>
           <h1></h1>
           <ul>
-            <li id="currenttime"></li>
+            <li>Last update: <span id="currenttime"></span></li>
           </ul>
           <div class="row">
             <div class="col-6">
-              <span class="bigemoji"> 🌒</span>
+              <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="overcast clouds" class="bigemoji" id="icon">
+          
               <span id="bigTemp" class="bigTemp">7</span>
-              <a href="#" id="°c"> °C </a> |
-              <a href="#" id="°f"> °F </a>
+              <span class="units">
+              <a href="#" id="°c"> °C </a> | <a href="#" id="°f"> °F </a>
+              </span>
             </div>
             <div class="col-6">
               <ul>
+                <li>Description: <span id="description">Clear</span></li>
                 <li>Humidity: <span id="humidity">10</span>%</li>
                 <li>Wind: <span id="wind">5</span>mph</li>
               </ul>
