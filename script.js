@@ -56,7 +56,7 @@ function showWeather(response) {
   function movetofahrenheit(event) {
     event.preventDefault();
     let temp = document.querySelector("#bigTemp");
-    temp.innerHTML = Math.round(respond.data.main.temp * 1.8) + 32;
+    temp.innerHTML = Math.round(response.data.main.temp * 1.8) + 32;
   }
   let fahrenheit = document.querySelector("#°f");
   fahrenheit.addEventListener("click", movetofahrenheit);
@@ -64,7 +64,7 @@ function showWeather(response) {
   function movetocelcius(event) {
     event.preventDefault();
     let temp = document.querySelector("#bigTemp");
-    temp.innerHTML = Math.round(respond.data.main.temp);
+    temp.innerHTML = Math.round(response.data.main.temp);
   }
   let celcius = document.querySelector("#°c");
   celcius.addEventListener("click", movetocelcius);
