@@ -26,87 +26,40 @@
           <form id="searchform">
             <input
               type="text"
-              id="city"
+              id="city-input"
               placeholder="    🔍Enter your city"
               autofocus="on"
             />
             <input type="submit" value="Search" id="search" />
             <input type="button" value="Current City" id="cityButton" />
           </form>
-          <h1></h1>
+          <div class="overview">
+         <h1 id="city"></h1>
           <ul>
-            <li>Last update: <span id="currenttime"></span></li>
+            <li>Last update: <span id="date"></span></li>
           </ul>
+          </div>
           <div class="row">
             <div class="col-6">
               <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="overcast clouds" class="bigemoji" id="icon">
           
-              <span id="bigTemp" class="bigTemp">7</span>
+              <span id="temperature" class="temperature"></span>
               <span class="units">
               <a href="#" id="°c"> °C </a> | <a href="#" id="°f"> °F </a>
               </span>
             </div>
             <div class="col-6">
+              <div class="dhw">
               <ul>
-                <li>Description: <span id="description">Clear</span></li>
-                <li>Humidity: <span id="humidity">10</span>%</li>
-                <li>Wind: <span id="wind">5</span>mph</li>
+                <li>Description: <span id="description"></span></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>mph</li>
               </ul>
-            </div>
-            <div class="col-2.4">
-              <div class="card-group">
-                <div class="maincard">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Mon</h5>
-
-                      <div class="emoji">🌤</div>
-                      <div class="temp">11°</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-2.4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Tue</h5>
-
-                      <div class="emoji">🌤</div>
-                      <div class="temp">15°</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-2.4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Wed</h5>
-
-                      <div class="emoji">🌦</div>
-                      <div class="temp">14°</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-2.4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Thu</h5>
-
-                      <div class="emoji">🌦</div>
-                      <div class="temp">8°</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-2.4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Fri</h5>
-
-                      <div class="emoji">🌧</div>
-                      <div class="temp">10°</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
+<div class="forecast"id="forecast">
+           
+</div>
           </div>
         </div>
      
